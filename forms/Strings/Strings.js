@@ -1,12 +1,16 @@
-let quoteString = "Failure is simply the opportunity to begin again this time more intelligently."
-console.log(`Upper case string is: ${quoteString.toUpperCase()}`)
 
-let authorString = "-Henry Ford"
-let completeString = quoteString.concat(authorString)
+let quoteString = "Failure is simply the opportunity to begin again this time more intelligently."
+alert(`Upper case string is: ${quoteString.toUpperCase()}`)
+console.log(quoteString)
+
+let authorString = "- Henry Ford"
+alert(authorString)
+console.log(authorString)
+
+let completeString = quoteString.concat('\n', authorString)
+alert(completeString)
 console.log(completeString)
 
 let found = completeString.includes("Henry")
-  if (found == false)
-    console.log("Henry was not in completeString")
-  else
-    console.log("Henry was in completeString")
+found ? alert("Henry was in completeString") : alert("Henry was NOT in completeString")
+console.log(found)
